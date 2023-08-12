@@ -18,7 +18,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Redirect to ThankYou.html after sending the email
     header("Error Box.html");
     exit();
-} else {
-    echo "Error: Invalid request.";
-}
+} 
 ?>
