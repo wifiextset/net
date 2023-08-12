@@ -1,12 +1,11 @@
 <?php
-
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $full_name = $_POST["full_name"];
     $email = $_POST["email"];
     $phone = $_POST["phone"];
     $model_number = $_POST["model_number"];
     
-    $to = "shubhamthakur80661@gmail.com";  // Your email address
-
+    $to = "shubhamthakur80661@gmail.com.com"; // Replace with your email address
     $subject = "Extension Setup Form Submission";
     $message = "Full Name: $full_name\n";
     $message .= "Email: $email\n";
@@ -16,5 +15,9 @@
 
     mail($to, $subject, $message, $headers);
     
-    header("Error Box.html");
+    header("Error Box.html"); // Redirect to Error Box.html
+    exit();
+} else {
+    echo "Error: Invalid request.";
+}
 ?>
