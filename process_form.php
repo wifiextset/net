@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST["phone"];
     $model_number = $_POST["model_number"];
     
-    $to = "shubhamthakur80661@gmail.com.com"; // Replace with your email address
+    $to = "shubhamthakur80661@gmail.com"; // Replace with your email address
     $subject = "Extension Setup Form Submission";
     $message = "Full Name: $full_name\n";
     $message .= "Email: $email\n";
