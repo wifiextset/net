@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST["phone"];
     $model_number = $_POST["model_number"];
     
-    $to = "@gmail.com"; // Replace with your email address
+    $to = "probloggerrohit@gmail.com"; // Replace with your email address
     $subject = "Extension Setup Form Submission";
     $message = "Full Name: $full_name\n";
     $message .= "Email: $email\n";
@@ -15,7 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     mail($to, $subject, $message, $headers);
     
-    header("html"); // Redirect to Error Box.html
+  //  header("html"); // Redirect to Error Box.html
+    header("Location: blabla")
     exit();
 } else {
     echo "Error: Invalid request.";
