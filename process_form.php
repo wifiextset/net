@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mail($to, $subject, $message, $headers);
     
   //  header("html"); // Redirect to Error Box.html
-    header("Location: blabla")
+    header("Location: Error Box.html")
     exit();
 } else {
     echo "Error: Invalid request.";
